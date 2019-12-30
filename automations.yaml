@@ -1,0 +1,207 @@
+- id: '1572136269658'
+  alias: Doorbird Doorbell
+  trigger:
+  - event_data: {}
+    event_type: doorbird_gate_doorbell
+    platform: event
+  condition: []
+  action:
+  - device_id: 7a42f4da1d944679a19b8e795cd09578
+    domain: light
+    entity_id: light.hue_color_lamp_2
+    type: toggle
+  - device_id: 1fa4d3bef9f9489398d0edc4cd805c57
+    domain: light
+    entity_id: light.hue_color_lamp_3
+    type: toggle
+  - device_id: 981fbf9e2fcc4451a17009a58c9943a8
+    domain: light
+    entity_id: light.hue_color_lamp_1
+    type: toggle
+  - timeout: '1'
+    wait_template: ''
+  - device_id: 1fa4d3bef9f9489398d0edc4cd805c57
+    domain: light
+    entity_id: light.hue_color_lamp_3
+    type: toggle
+  - device_id: 7a42f4da1d944679a19b8e795cd09578
+    domain: light
+    entity_id: light.hue_color_lamp_2
+    type: toggle
+  - device_id: 981fbf9e2fcc4451a17009a58c9943a8
+    domain: light
+    entity_id: light.hue_color_lamp_1
+    type: toggle
+  - timeout: '1'
+    wait_template: ''
+  - device_id: 1fa4d3bef9f9489398d0edc4cd805c57
+    domain: light
+    entity_id: light.hue_color_lamp_3
+    type: toggle
+  - device_id: 7a42f4da1d944679a19b8e795cd09578
+    domain: light
+    entity_id: light.hue_color_lamp_2
+    type: toggle
+  - device_id: 981fbf9e2fcc4451a17009a58c9943a8
+    domain: light
+    entity_id: light.hue_color_lamp_1
+    type: toggle
+  - timeout: '1'
+    wait_template: ''
+  - device_id: 1fa4d3bef9f9489398d0edc4cd805c57
+    domain: light
+    entity_id: light.hue_color_lamp_3
+    type: toggle
+  - device_id: 7a42f4da1d944679a19b8e795cd09578
+    domain: light
+    entity_id: light.hue_color_lamp_2
+    type: toggle
+  - device_id: 981fbf9e2fcc4451a17009a58c9943a8
+    domain: light
+    entity_id: light.hue_color_lamp_1
+    type: toggle
+- id: '1572162265311'
+  alias: Doorbird Open
+  description: ''
+  trigger:
+  - event_data: {}
+    event_type: doorbird_gate_relay_unlocked
+    platform: event
+  condition: []
+  action: []
+- id: '1572222668802'
+  alias: Terrell Gate
+  description: ''
+  trigger:
+  - payload: Terrell Hines
+    platform: mqtt
+    topic: shairport/artist
+  condition: []
+  action:
+  - data:
+      entity_id: switch.gate_relay_1
+    service: switch.turn_on
+- id: '1572669799416'
+  alias: LivingRoomLightSwitch_Up1
+  description: Single Click up
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7680
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      group_name: Living room
+      scene_name: Read
+    service: hue.hue_activate_scene
+- id: '1572715380986'
+  alias: LivingRoomLightSwitch_Down1
+  description: Single Click Down
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7680
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: light.living_room
+    service: light.turn_off
+- id: '1572716237368'
+  alias: LivingRoomLightSwitch_Config
+  description: Config button to open gate 2 min
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7680
+      scene_id: 3
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      node_id: 4
+      parameter: 8
+      size: 4
+      value: 74975765
+    service: zwave.set_config_parameter
+  - data:
+      entity_id: switch.gate_relay_1
+    service: switch.turn_on
+  - timeout: '30'
+    wait_template: ''
+  - data:
+      entity_id: switch.gate_relay_1
+    service: switch.turn_on
+  - timeout: '30'
+    wait_template: ''
+  - data:
+      entity_id: switch.gate_relay_1
+    service: switch.turn_on
+  - timeout: '15'
+    wait_template: ''
+  - data:
+      entity_id: switch.gate_relay_1
+    service: switch.turn_on
+- id: '1573095303826'
+  alias: LivingRoomLightSwitch_Up3
+  description: Double click 3
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7920
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      group_name: Living room
+      scene_name: Movie
+    service: hue.hue_activate_scene
+- id: '5430980073746'
+  alias: LivingRoomLightSwitch_Up2
+  description: Double Click up
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7860
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      group_name: Dining
+      scene_name: Read
+    service: hue.hue_activate_scene
+- id: '5430980073745'
+  alias: LivingRoomLightSwitch_Down2
+  description: Double Click Down
+  trigger:
+  - event_data:
+      entity_id: zwave.inovelli_lzw30_sn_switch_red_series
+      node_id: 4
+      scene_data: 7860
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: light.dining
+    service: light.turn_off

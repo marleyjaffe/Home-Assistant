@@ -1,0 +1,100 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+#Z-wave
+zwave:
+  usb_path: /dev/ttyUSB0
+  device_config: !include zwave_device_config.yaml
+  config_path: /home/homeassistant/.homeassistant/zwave/config
+#Zigbee
+zha:
+  usb_path: /dev/ttyUSB1
+  database_path: /home/homeassistant/.homeassistant/zigbee.db
+
+camera:
+  - platform: doorbird
+
+switch:
+  - platform: doorbird
+
+#Doorbird Configuration
+doorbird:
+  devices:
+    - host: 192.168.1.11
+      username: !secret doorbird_username
+      password: !secret doorbird_password
+      token: !secret doorbird_token
+      name: gate
+      events:
+        - doorbell
+        - relay_unlocked
+        - motion
+
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api
+
+homekit:
+  
+apple_tv:
+  - host: 192.168.1.6
+    login_id: LOGIN_ID_1
+    start_off: true
+
+
+#MQTT Local Host Connector?
+mqtt:
+  broker: 192.168.1.102
+#U/P configured in Shairpoint-Sync
+#  username: mqtt_client
+#  password: 12345
+  client_id: homeassistant1
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'
+  discovery: true
+  discovery_prefix: homeassistant
+
+#MQTT Sensor
+sensor:
+  - platform: mqtt
+    state_topic: "shairport/title"
+    name: "Garage Music: Title"
+    expire_after: 180
+  - platform: mqtt
+    state_topic: "shairport/artist"
+    name: "Garage Music: Artist"
+    expire_after: 180
+  - platform: mqtt
+    state_topic: "shairport/album"
+    name: "Garage Music: Album"
+    expire_after: 180
+  - platform: mqtt
+    state_topic: "shairport/genre"
+    name: "Garage Music: Genre"
+    expire_after: 180
+
+#service: remote.send_command
+#data:
+#  entity_id: remote.apple_tv
+#  command:
+#    - left
+#    - left
+#    - menu
+#    - select
