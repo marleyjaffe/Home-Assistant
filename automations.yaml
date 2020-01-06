@@ -183,11 +183,10 @@
     platform: event
   condition: []
   action:
-  - alias: ''
-    data:
-      group_name: Dining
-      scene_name: Read
-    service: hue.hue_activate_scene
+  - device_id: bb74a122851a429584f9f1ae8d350223
+    domain: light
+    entity_id: light.inovelli_unknown_type_0005_id_0001_level
+    type: turn_on
 - id: '5430980073745'
   alias: LivingRoomLightSwitch_Down2
   description: Double Click Down
@@ -201,7 +200,7 @@
     platform: event
   condition: []
   action:
-  - alias: ''
-    data:
-      entity_id: light.dining
-    service: light.turn_off
+  - device_id: bb74a122851a429584f9f1ae8d350223
+    domain: light
+    entity_id: light.inovelli_unknown_type_0005_id_0001_level
+    type: turn_off
