@@ -204,3 +204,66 @@
     domain: light
     entity_id: light.inovelli_unknown_type_0005_id_0001_level
     type: turn_off
+- id: '1578457993258'
+  alias: BedroomLightSwitch_Up1
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 10
+      scene_data: 7680
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      group_name: Marley Bedroom
+      scene_name: Concentrate
+    service: hue.hue_activate_scene
+- id: '1578458437376'
+  alias: BedroomLightSwitch_Down1
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 10
+      scene_data: 7680
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - alias: ''
+    data:
+      entity_id: light.hue_color_lamp_4
+    service: light.turn_off
+- id: '1578523199911'
+  alias: GarageLightSwitch_Up1
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 8
+      scene_data: 7680
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      entity_id: group.garage
+    service: switch.turn_on
+- id: '1578523221836'
+  alias: GarageLightSwitch_Down1
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 8
+      scene_data: 7680
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      entity_id: group.garage
+    service: switch.turn_off

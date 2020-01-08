@@ -7,10 +7,14 @@ garage:
     - switch.greenwave_reality_inc_powernode_6_port_switch_4
     - switch.greenwave_reality_inc_powernode_6_port_switch_5
     - switch.greenwave_reality_inc_powernode_6_port_switch_6
-    - switch.greenwave_reality_inc_powernode_6_port_switch_6
+    - switch.greenwave_reality_inc_powernode_6_port_switch_7
     # Dimmer Plug
     - light.inovelli_unknown_type_c000_id_c002_level
     # Light Switch
     - light.inovelli_unknown_type_0001_id_0001_level
     # Smart Bulb
     - light.inovelli_unknown_type_0005_id_0001_level_2
+marleyBedroom:
+  name: Marley Bedroom
+  entities:
+    - light.hue_color_lamp_4
