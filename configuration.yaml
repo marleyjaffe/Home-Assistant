@@ -13,12 +13,14 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+scene: !include scene.yaml
 
 #Z-wave
 zwave:
   usb_path: /dev/ttyUSB0
   device_config: !include zwave_device_config.yaml
   config_path: /home/homeassistant/.homeassistant/zwave/config
+  network_key: !secret zwave_networkKey
 #Zigbee
 zha:
   usb_path: /dev/ttyUSB1

@@ -6,7 +6,6 @@ garage:
     - switch.greenwave_reality_inc_powernode_6_port_switch_3
     - switch.greenwave_reality_inc_powernode_6_port_switch_4
     - switch.greenwave_reality_inc_powernode_6_port_switch_5
-    - switch.greenwave_reality_inc_powernode_6_port_switch_6
     - switch.greenwave_reality_inc_powernode_6_port_switch_7
     # Dimmer Plug
     - light.inovelli_unknown_type_c000_id_c002_level
