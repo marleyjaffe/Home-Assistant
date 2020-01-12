@@ -1,0 +1,704 @@
+- id: '1578635342375'
+  name: Garage_Party
+  entities:
+    light.inovelli_unknown_type_0001_id_0001_level:
+      brightness: 116
+      friendly_name: Garage Light Switch
+      node_id: 8
+      power_consumption: 5.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594176962561'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level_2:
+      brightness: 255
+      friendly_name: Garage Fixture
+      hs_color:
+      - 35.493
+      - 27.843
+      node_id: 9
+      rgb_color:
+      - 255
+      - 226
+      - 184
+      state: 'on'
+      supported_features: 49
+      value_id: '72057594193739777'
+      value_index: 0
+      value_instance: 1
+      xy_color:
+      - 0.39
+      - 0.37
+    light.inovelli_unknown_type_c000_id_c002_level:
+      brightness: 152
+      friendly_name: Dimmer Plug
+      node_id: 5
+      state: 'on'
+      supported_features: 1
+      value_id: '72057594126630913'
+      value_index: 0
+      value_instance: 1
+    switch.greenwave_reality_inc_powernode_6_port_switch:
+      friendly_name: Disco Ball
+      node_id: 11
+      power_consumption: 0.2
+      state: 'on'
+      value_id: '144115188265205760'
+      value_index: 0
+      value_instance: 2
+    switch.greenwave_reality_inc_powernode_6_port_switch_2:
+      friendly_name: NeonSign
+      node_id: 11
+      power_consumption: 90.7
+      state: 'on'
+      value_id: '216172782303133696'
+      value_index: 0
+      value_instance: 3
+    switch.greenwave_reality_inc_powernode_6_port_switch_3:
+      friendly_name: Christmas Lights
+      node_id: 11
+      power_consumption: 62.9
+      state: 'on'
+      value_id: '288230376341061632'
+      value_index: 0
+      value_instance: 4
+    switch.greenwave_reality_inc_powernode_6_port_switch_4:
+      friendly_name: Lava Lamp
+      node_id: 11
+      power_consumption: 25.5
+      state: 'on'
+      value_id: '360287970378989568'
+      value_index: 0
+      value_instance: 5
+    switch.greenwave_reality_inc_powernode_6_port_switch_5:
+      friendly_name: Guinness Sign
+      node_id: 11
+      power_consumption: 31.1
+      state: 'on'
+      value_id: '432345564416917504'
+      value_index: 0
+      value_instance: 6
+    switch.greenwave_reality_inc_powernode_6_port_switch_7:
+      friendly_name: Spot Light
+      node_id: 11
+      power_consumption: 34.4
+      state: 'on'
+      value_id: '72057594227277824'
+      value_index: 0
+      value_instance: 1
+    zwave.greenwave_reality_inc_powernode_6_port_2:
+      application_version: '4.21'
+      averageRequestRTT: 20
+      averageResponseRTT: 31
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      friendly_name: GreenWave Reality Inc PowerNode 6 port
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: false
+      lastRequestRTT: 20
+      lastResponseRTT: 32
+      manufacturer_name: GreenWave Reality Inc
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 9
+      - 10
+      node_id: 11
+      node_name: GreenWave Reality Inc PowerNode 6 port
+      product_name: PowerNode 6 port
+      query_stage: Complete
+      receivedCnt: 88
+      receivedDups: 1
+      receivedTS: '2020-01-10 06:04:31:983 '
+      receivedUnsolicited: 0
+      retries: 0
+      sentCnt: 149
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:31:951 '
+      state: ready
+    zwave.inovelli_unknown_type_0001_id_0001:
+      application_version: '1.35'
+      averageRequestRTT: 88
+      averageResponseRTT: 172
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 74
+      lastResponseRTT: 161
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 9
+      - 11
+      node_id: 8
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 48
+      receivedDups: 2
+      receivedTS: '2020-01-10 06:04:37:607 '
+      receivedUnsolicited: 27
+      retries: 0
+      sentCnt: 37
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:30:864 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001_2:
+      application_version: '2.28'
+      averageRequestRTT: 25
+      averageResponseRTT: 30
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 28
+      lastResponseRTT: 38
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 11
+      node_id: 9
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 141
+      receivedDups: 18
+      receivedTS: '2020-01-10 06:04:41:728 '
+      receivedUnsolicited: 7
+      retries: 0
+      sentCnt: 131
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:41:689 '
+      state: ready
+    zwave.inovelli_unknown_type_c000_id_c002:
+      application_version: '2.00'
+      averageRequestRTT: 26
+      averageResponseRTT: 50
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=c000, id=c002'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 27
+      lastResponseRTT: 48
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 11
+      - 6
+      - 9
+      node_id: 5
+      node_name: 'Inovelli Unknown: type=c000, id=c002'
+      product_name: 'Unknown: type=c000, id=c002'
+      query_stage: Complete
+      receivedCnt: 45
+      receivedDups: 10
+      receivedTS: '2020-01-10 06:04:07:079 '
+      receivedUnsolicited: 20
+      retries: 0
+      sentCnt: 39
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:07:013 '
+      state: ready
+- id: '1578635464593'
+  name: Garage_Work
+  entities:
+    light.inovelli_unknown_type_0001_id_0001_level:
+      brightness: 255
+      friendly_name: Garage Light Switch
+      node_id: 8
+      power_consumption: 5.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594176962561'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level_2:
+      brightness: 255
+      friendly_name: Garage Fixture
+      hs_color:
+      - 35.493
+      - 27.843
+      node_id: 9
+      rgb_color:
+      - 255
+      - 226
+      - 184
+      state: 'on'
+      supported_features: 49
+      value_id: '72057594193739777'
+      value_index: 0
+      value_instance: 1
+      xy_color:
+      - 0.39
+      - 0.37
+    light.inovelli_unknown_type_c000_id_c002_level:
+      brightness: 255
+      friendly_name: Dimmer Plug
+      node_id: 5
+      state: 'on'
+      supported_features: 1
+      value_id: '72057594126630913'
+      value_index: 0
+      value_instance: 1
+    switch.greenwave_reality_inc_powernode_6_port_switch:
+      friendly_name: Disco Ball
+      node_id: 11
+      power_consumption: 0.2
+      state: 'off'
+      value_id: '144115188265205760'
+      value_index: 0
+      value_instance: 2
+    switch.greenwave_reality_inc_powernode_6_port_switch_2:
+      friendly_name: NeonSign
+      node_id: 11
+      power_consumption: 90.7
+      state: 'on'
+      value_id: '216172782303133696'
+      value_index: 0
+      value_instance: 3
+    switch.greenwave_reality_inc_powernode_6_port_switch_3:
+      friendly_name: Christmas Lights
+      node_id: 11
+      power_consumption: 62.9
+      state: 'on'
+      value_id: '288230376341061632'
+      value_index: 0
+      value_instance: 4
+    switch.greenwave_reality_inc_powernode_6_port_switch_4:
+      friendly_name: Lava Lamp
+      node_id: 11
+      power_consumption: 25.5
+      state: 'off'
+      value_id: '360287970378989568'
+      value_index: 0
+      value_instance: 5
+    switch.greenwave_reality_inc_powernode_6_port_switch_5:
+      friendly_name: Guinness Sign
+      node_id: 11
+      power_consumption: 31.1
+      state: 'on'
+      value_id: '432345564416917504'
+      value_index: 0
+      value_instance: 6
+    switch.greenwave_reality_inc_powernode_6_port_switch_7:
+      friendly_name: Spot Light
+      node_id: 11
+      power_consumption: 34.4
+      state: 'off'
+      value_id: '72057594227277824'
+      value_index: 0
+      value_instance: 1
+    zwave.greenwave_reality_inc_powernode_6_port_2:
+      application_version: '4.21'
+      averageRequestRTT: 20
+      averageResponseRTT: 31
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      friendly_name: GreenWave Reality Inc PowerNode 6 port
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: false
+      lastRequestRTT: 21
+      lastResponseRTT: 31
+      manufacturer_name: GreenWave Reality Inc
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 9
+      - 10
+      node_id: 11
+      node_name: GreenWave Reality Inc PowerNode 6 port
+      product_name: PowerNode 6 port
+      query_stage: Complete
+      receivedCnt: 91
+      receivedDups: 1
+      receivedTS: '2020-01-10 06:04:53:180 '
+      receivedUnsolicited: 0
+      retries: 0
+      sentCnt: 155
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:53:149 '
+      state: ready
+    zwave.inovelli_unknown_type_0001_id_0001:
+      application_version: '1.35'
+      averageRequestRTT: 87
+      averageResponseRTT: 206
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 82
+      lastResponseRTT: 241
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 9
+      - 11
+      node_id: 8
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 50
+      receivedDups: 2
+      receivedTS: '2020-01-10 06:04:53:351 '
+      receivedUnsolicited: 28
+      retries: 0
+      sentCnt: 39
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:52:199 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001_2:
+      application_version: '2.28'
+      averageRequestRTT: 24
+      averageResponseRTT: 36
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 21
+      lastResponseRTT: 32
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 11
+      node_id: 9
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 160
+      receivedDups: 19
+      receivedTS: '2020-01-10 06:04:52:874 '
+      receivedUnsolicited: 8
+      retries: 0
+      sentCnt: 147
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:52:842 '
+      state: ready
+    zwave.inovelli_unknown_type_c000_id_c002:
+      application_version: '2.00'
+      averageRequestRTT: 26
+      averageResponseRTT: 46
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=c000, id=c002'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 26
+      lastResponseRTT: 46
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 11
+      - 6
+      - 9
+      node_id: 5
+      node_name: 'Inovelli Unknown: type=c000, id=c002'
+      product_name: 'Unknown: type=c000, id=c002'
+      query_stage: Complete
+      receivedCnt: 49
+      receivedDups: 11
+      receivedTS: '2020-01-10 06:04:53:989 '
+      receivedUnsolicited: 22
+      retries: 0
+      sentCnt: 42
+      sentFailed: 0
+      sentTS: '2020-01-10 06:04:53:915 '
+      state: ready
+- id: '1578636405168'
+  name: Garage_Off
+  entities:
+    light.inovelli_unknown_type_0001_id_0001_level:
+      friendly_name: Garage Light Switch
+      node_id: 8
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594176962561'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level_2:
+      friendly_name: Garage Fixture
+      node_id: 9
+      state: 'off'
+      supported_features: 49
+      value_id: '72057594193739777'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_c000_id_c002_level:
+      friendly_name: Dimmer Plug
+      node_id: 5
+      state: 'off'
+      supported_features: 1
+      value_id: '72057594126630913'
+      value_index: 0
+      value_instance: 1
+    switch.greenwave_reality_inc_powernode_6_port_switch:
+      friendly_name: Disco Ball
+      node_id: 11
+      power_consumption: 0.2
+      state: 'off'
+      value_id: '144115188265205760'
+      value_index: 0
+      value_instance: 2
+    switch.greenwave_reality_inc_powernode_6_port_switch_2:
+      friendly_name: NeonSign
+      node_id: 11
+      power_consumption: 90.7
+      state: 'off'
+      value_id: '216172782303133696'
+      value_index: 0
+      value_instance: 3
+    switch.greenwave_reality_inc_powernode_6_port_switch_3:
+      friendly_name: Christmas Lights
+      node_id: 11
+      power_consumption: 62.9
+      state: 'off'
+      value_id: '288230376341061632'
+      value_index: 0
+      value_instance: 4
+    switch.greenwave_reality_inc_powernode_6_port_switch_4:
+      friendly_name: Lava Lamp
+      node_id: 11
+      power_consumption: 25.5
+      state: 'off'
+      value_id: '360287970378989568'
+      value_index: 0
+      value_instance: 5
+    switch.greenwave_reality_inc_powernode_6_port_switch_5:
+      friendly_name: Guinness Sign
+      node_id: 11
+      power_consumption: 31.1
+      state: 'off'
+      value_id: '432345564416917504'
+      value_index: 0
+      value_instance: 6
+    switch.greenwave_reality_inc_powernode_6_port_switch_7:
+      friendly_name: Spot Light
+      node_id: 11
+      power_consumption: 34.4
+      state: 'off'
+      value_id: '72057594227277824'
+      value_index: 0
+      value_instance: 1
+    zwave.greenwave_reality_inc_powernode_6_port_2:
+      application_version: '4.21'
+      averageRequestRTT: 21
+      averageResponseRTT: 32
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      friendly_name: GreenWave Reality Inc PowerNode 6 port
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: false
+      lastRequestRTT: 21
+      lastResponseRTT: 33
+      manufacturer_name: GreenWave Reality Inc
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 9
+      - 10
+      node_id: 11
+      node_name: GreenWave Reality Inc PowerNode 6 port
+      product_name: PowerNode 6 port
+      query_stage: Complete
+      receivedCnt: 100
+      receivedDups: 1
+      receivedTS: '2020-01-10 06:06:39:807 '
+      receivedUnsolicited: 0
+      retries: 0
+      sentCnt: 173
+      sentFailed: 0
+      sentTS: '2020-01-10 06:06:39:774 '
+      state: ready
+    zwave.inovelli_unknown_type_0001_id_0001:
+      application_version: '1.35'
+      averageRequestRTT: 67
+      averageResponseRTT: 151
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 49
+      lastResponseRTT: 126
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 9
+      - 11
+      node_id: 8
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 57
+      receivedDups: 2
+      receivedTS: '2020-01-10 06:06:24:312 '
+      receivedUnsolicited: 31
+      retries: 0
+      sentCnt: 45
+      sentFailed: 0
+      sentTS: '2020-01-10 06:06:22:876 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001_2:
+      application_version: '2.28'
+      averageRequestRTT: 23
+      averageResponseRTT: 49
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 21
+      lastResponseRTT: 51
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 4
+      - 5
+      - 6
+      - 8
+      - 11
+      node_id: 9
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 175
+      receivedDups: 21
+      receivedTS: '2020-01-10 06:06:19:241 '
+      receivedUnsolicited: 10
+      retries: 0
+      sentCnt: 159
+      sentFailed: 0
+      sentTS: '2020-01-10 06:06:17:203 '
+      state: ready
+    zwave.inovelli_unknown_type_c000_id_c002:
+      application_version: '2.00'
+      averageRequestRTT: 31
+      averageResponseRTT: 46
+      capabilities:
+      - beaming
+      - routing
+      - listening
+      - zwave_plus
+      friendly_name: 'Inovelli Unknown: type=c000, id=c002'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 26
+      lastResponseRTT: 44
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 11
+      - 6
+      - 9
+      node_id: 5
+      node_name: 'Inovelli Unknown: type=c000, id=c002'
+      product_name: 'Unknown: type=c000, id=c002'
+      query_stage: Complete
+      receivedCnt: 59
+      receivedDups: 14
+      receivedTS: '2020-01-10 06:06:13:468 '
+      receivedUnsolicited: 24
+      retries: 0
+      sentCnt: 50
+      sentFailed: 0
+      sentTS: '2020-01-10 06:06:13:424 '
+      state: ready

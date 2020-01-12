@@ -13,7 +13,8 @@ tts:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
-scene: !include scene.yaml
+scene: !include scenes.yaml
+panel_custom: !include panel_custom.yaml
 
 #Z-wave
 zwave:
