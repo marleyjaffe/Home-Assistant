@@ -315,7 +315,7 @@
     data:
       node_id: 10
       parameter: 14
-      value: 100%
+      value: "100%"
 - id: '1578889509148'
   alias: Bedroom Notification Light Off
   description: ''
@@ -329,4 +329,4 @@
     data:
       node_id: 10
       parameter: 14
-      value: 0%
+      value: "0%"

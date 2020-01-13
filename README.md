@@ -12,13 +12,13 @@ HomeAssistant (HASS)
 * Inovelli Bulbs
 
 ## Quick Notes/Reminders/Links
-###Path to configuration.yaml:
+### Path to configuration.yaml:
 /home/homeassistant/.homeassistant
 
-###Restart HASS Service:
+### Restart HASS Service:
 sudo systemctl restart home-assistant@homeassistant.service
 
-###Update Steps:
+### Update Steps:
 https://www.home-assistant.io/docs/installation/virtualenv#upgrade
 https://www.home-assistant.io/docs/installation/raspberry-pi/#updating
 
@@ -27,6 +27,6 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/#updating
 3. python3 -m pip install --upgrade homeassistant
    * or pip3 install --upgrade homeassistant
 
-###HASS-CLI
+### HASS-CLI
 https://github.com/home-assistant/home-assistant-cli
 
