@@ -313,10 +313,10 @@
       scene_id: 2
     event_type: zwave.scene_activated
     platform: event
- # - entity_id: light.inovelli_unknown_type_0005_id_0001_level_2
- #   from: 'State: "OFF"'
- #   platform: state
- #   to: 'State: "ON"'
+#  - entity_id: light.inovelli_unknown_type_0005_id_0001_level_2
+#    from: 'State: "OFF"'
+#    platform: state
+#    to: 'State: "ON"'
 #   - entity_id:  light.hue_color_lamp_4
 #     platform: state
 #     to: 'on'
@@ -328,18 +328,12 @@
 #    platform: state
 #  - entity_id: sensor.greenwave_reality_inc_powernode_6_port_power_2
 #    platform: state
-  condition: []
+#  condition: []
   action:
   - service: zwave.set_config_parameter
-#      data: 
-#        node_id: 10
-#        parameter: 14
-#        value: '10'
-#
-    data_template: 
-      {
-      "node_id": 10,
-      "parameter": 14,
-      "value": 10,
-      "size": 1,
-      }
+    data: 
+      node_id: 10
+      parameter: 14
+      value: "100%"
+
+
