@@ -1,12 +1,12 @@
 garage:
   name: Garage
   entities:
-    - switch.greenwave_reality_inc_powernode_6_port_switch
-    - switch.greenwave_reality_inc_powernode_6_port_switch_2
-    - switch.greenwave_reality_inc_powernode_6_port_switch_3
-    - switch.greenwave_reality_inc_powernode_6_port_switch_4
-    - switch.greenwave_reality_inc_powernode_6_port_switch_5
-    - switch.greenwave_reality_inc_powernode_6_port_switch_7
+    - switch.greenwave_powernode_switch
+    - switch.greenwave_powernode_switch_2
+    - switch.greenwave_powernode_switch_3
+    - switch.greenwave_powernode_switch_4
+    - switch.greenwave_powernode_switch_5
+    - switch.greenwave_powernode_switch_7
     # Dimmer Plug
     - light.inovelli_unknown_type_c000_id_c002_level
     # Light Switch
@@ -17,3 +17,10 @@ marleyBedroom:
   name: Marley Bedroom
   entities:
     - light.hue_color_lamp_4
+livingArea:
+  name: Big Room
+  entities:
+    - light.hue_color_lamp_1
+    - light.hue_color_lamp_2
+    - light.hue_color_lamp_3
+#    - light.
