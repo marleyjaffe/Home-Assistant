@@ -30,3 +30,13 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/#updating
 ### HASS-CLI
 https://github.com/home-assistant/home-assistant-cli
 
+### Git Revert commit
+https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed
+Method 1: Undo commit and keep all files staged
+git reset --soft HEAD~;
+
+Method 2: Undo commit and unstage all files
+git reset HEAD~;
+
+Method 3: Undo the commit and completely remove all changes
+git reset --hard HEAD~;
