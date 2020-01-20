@@ -133,7 +133,7 @@
       node_id: 4
       parameter: 8
       size: 4
-      value: 74975765
+      value: 71174700
     service: zwave.set_config_parameter
   - data:
       entity_id: switch.gate_relay_1
@@ -315,18 +315,61 @@
     data:
       node_id: 10
       parameter: 14
-      value: "100%"
+      value: 100%
 - id: '1578889509148'
   alias: Bedroom Notification Light Off
   description: ''
   trigger:
   - entity_id: group.garage
+    from: 'on'
     platform: state
     to: 'off'
   condition: []
   action:
-  - service: zwave.set_config_parameter
-    data:
+  - data:
       node_id: 10
       parameter: 14
-      value: "0%"
+      value: 0%
+    service: zwave.set_config_parameter
+- id: '1579473499259'
+  alias: KitchenDimmer_Up1
+  description: KitchenDimmer Up 1 turns on Dining Room Light
+  trigger:
+  - event_data:
+      node_id: 12
+      scene_data: 7680
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - device_id: bb74a122851a429584f9f1ae8d350223
+    domain: light
+    entity_id: light.inovelli_unknown_type_0005_id_0001_level
+    type: turn_on
+- id: '1579473586044'
+  alias: KitchenDimmer_Down1
+  description: ''
+  trigger:
+  - event_data:
+      node_id: 12
+      scene_data: 7680
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - device_id: bb74a122851a429584f9f1ae8d350223
+    domain: light
+    entity_id: light.inovelli_unknown_type_0005_id_0001_level
+    type: turn_off
+- id: '1579508459994'
+  alias: New Automation
+  description: ''
+  trigger:
+  - event_data:
+      actionName: All Off
+    event_type: ios.action_fired
+    platform: event
+  condition: []
+  action: []
