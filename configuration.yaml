@@ -104,3 +104,14 @@ sensor:
 
 hacs:
   token: !secret hacs_github_token
+
+sensor:
+  - platform: systemmonitor
+    resources: 
+      - type: memory_use_percent
+      - type: disk_free
+        arg: /home/homeassistant
+      - type: disk_use_percent
+        arg: /
+      - type: last_boot
+      - type: load_5m
