@@ -92,6 +92,15 @@ sensor:
     state_topic: "shairport/genre"
     name: "Garage Music: Genre"
     expire_after: 180
+  - platform: systemmonitor
+    resources:
+      - type: memory_use_percent
+      - type: disk_free
+        arg: /home/homeassistant
+      - type: disk_use_percent
+        arg: /
+      - type: last_boot
+      - type: load_5m
 
 #service: remote.send_command
 #data:
@@ -102,16 +111,16 @@ sensor:
 #    - menu
 #    - select
 
-hacs:
-  token: !secret hacs_github_token
+#hacs:
+#  token: !secret hacs_github_token
 
-sensor:
-  - platform: systemmonitor
-    resources: 
-      - type: memory_use_percent
-      - type: disk_free
-        arg: /home/homeassistant
-      - type: disk_use_percent
-        arg: /
-      - type: last_boot
-      - type: load_5m
+#sensor:
+#  - platform: systemmonitor
+#    resources: 
+#      - type: memory_use_percent
+#      - type: disk_free
+#        arg: /home/homeassistant
+#      - type: disk_use_percent
+#        arg: /
+#      - type: last_boot
+#      - type: load_5m
