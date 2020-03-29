@@ -187,6 +187,10 @@
     domain: light
     entity_id: light.inovelli_unknown_type_0005_id_0001_level
     type: turn_on
+  - device_id: 207a4b74c2ff4400998a7058a9f004f1
+    domain: light
+    entity_id: light.inovelli_lzw31_sn_dimmer_red_series_level
+    type: turn_on
 - id: '5430980073745'
   alias: LivingRoomLightSwitch_Down2
   description: Double Click Down
@@ -203,6 +207,10 @@
   - device_id: bb74a122851a429584f9f1ae8d350223
     domain: light
     entity_id: light.inovelli_unknown_type_0005_id_0001_level
+    type: turn_off
+  - device_id: 207a4b74c2ff4400998a7058a9f004f1
+    domain: light
+    entity_id: light.inovelli_lzw31_sn_dimmer_red_series_level
     type: turn_off
 - id: '1578457993258'
   alias: BedroomLightSwitch_Up1
@@ -277,12 +285,12 @@
   action:
   - scene: scene.garage_work
 - id: '1578717784283'
-  alias: LivingRoomLightSwitch_Down4
-  description: ''
+  alias: LivingRoomLightSwitch_Down3
+  description: Turn Off Garage
   trigger:
   - event_data:
       node_id: 4
-      scene_data: 7980
+      scene_data: 7920
       scene_id: 1
     event_type: zwave.scene_activated
     platform: event
@@ -364,12 +372,42 @@
     entity_id: light.inovelli_unknown_type_0005_id_0001_level
     type: turn_off
 - id: '1579508459994'
-  alias: New Automation
-  description: ''
+  alias: All Off trigger
+  description: Turn off All lights. Pause Garage Music if on.
   trigger:
   - event_data:
       actionName: All Off
     event_type: ios.action_fired
     platform: event
+  - event_data:
+      node_id: 4
+      scene_data: 8040
+      scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      event_data:
+        node_id: 8
+        scene_data: 8040
+        scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      event_data:
+        node_id: 10
+        scene_data: 8040
+        scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
+  - event_data:
+      event_data:
+        node_id: 12
+        scene_data: 8040
+        scene_id: 1
+    event_type: zwave.scene_activated
+    platform: event
   condition: []
-  action: []
+  action:
+  - scene: scene.garage_off
+  - scene: scene.living_lights_off
+  - scene: scene.bedroom_lights_off

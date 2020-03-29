@@ -252,3 +252,453 @@
       value_id: '72057594227277824'
       value_index: 0
       value_instance: 1
+- id: '1579570280837'
+  name: Evening Lighting
+  entities:
+    light.hue_color_lamp_1:
+      brightness: 110
+      color_temp: 385
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 1
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.hue_color_lamp_2:
+      brightness: 110
+      color_temp: 385
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 2
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.hue_color_lamp_3:
+      brightness: 110
+      color_temp: 385
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 3
+      max_mireds: 500
+      min_mireds: 153
+      state: 'on'
+      supported_features: 63
+    light.hue_color_lamp_4:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Marley Bedroom
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.inovelli_lzw31_sn_dimmer_red_series_level:
+      brightness: 134
+      friendly_name: Kitchen Light
+      node_id: 12
+      power_consumption: 3
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594244071425'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level:
+      brightness: 118
+      friendly_name: Dining Room
+      hs_color:
+      - 105.405
+      - 14.51
+      node_id: 6
+      rgb_color:
+      - 226
+      - 255
+      - 217
+      state: 'on'
+      supported_features: 49
+      value_id: '72057594143408129'
+      value_index: 0
+      value_instance: 1
+      xy_color:
+      - 0.316
+      - 0.375
+    zwave.inovelli_lzw31_sn_dimmer_red_series:
+      application_version: '1.35'
+      averageRequestRTT: 185
+      averageResponseRTT: 265
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 148
+      lastResponseRTT: 219
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 6
+      node_id: 12
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 82
+      receivedDups: 1
+      receivedTS: '2020-01-21 01:30:47:254 '
+      receivedUnsolicited: 62
+      retries: 0
+      sentCnt: 27
+      sentFailed: 0
+      sentTS: '2020-01-21 01:26:13:076 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001:
+      application_version: '2.28'
+      averageRequestRTT: 214
+      averageResponseRTT: 442
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 176
+      lastResponseRTT: 313
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 5
+      - 9
+      - 11
+      - 12
+      node_id: 6
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 48
+      receivedDups: 2
+      receivedTS: '2020-01-21 01:27:25:476 '
+      receivedUnsolicited: 11
+      retries: 0
+      sentCnt: 51
+      sentFailed: 0
+      sentTS: '2020-01-21 01:27:21:471 '
+      state: ready
+- id: '1579849135434'
+  name: Savanna Sunset
+  entities:
+    light.hue_color_lamp_1:
+      brightness: 199
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 1
+      hs_color:
+      - 14.93
+      - 83.529
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 95
+      - 42
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.636
+      - 0.335
+    light.hue_color_lamp_2:
+      brightness: 199
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 2
+      hs_color:
+      - 50.833
+      - 28.235
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 243
+      - 183
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.38
+      - 0.391
+    light.hue_color_lamp_3:
+      brightness: 199
+      effect: none
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 3
+      hs_color:
+      - 18.387
+      - 72.941
+      max_mireds: 500
+      min_mireds: 153
+      rgb_color:
+      - 255
+      - 126
+      - 69
+      state: 'on'
+      supported_features: 63
+      xy_color:
+      - 0.586
+      - 0.353
+    light.inovelli_lzw31_sn_dimmer_red_series_level:
+      brightness: 13
+      friendly_name: Kitchen Light
+      node_id: 12
+      power_consumption: 2.3
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594244071425'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level:
+      brightness: 57
+      friendly_name: Dining Room
+      hs_color:
+      - 29.863
+      - 85.882
+      node_id: 6
+      rgb_color:
+      - 255
+      - 145
+      - 36
+      state: 'on'
+      supported_features: 49
+      value_id: '72057594143408129'
+      value_index: 0
+      value_instance: 1
+      xy_color:
+      - 0.581
+      - 0.388
+    zwave.inovelli_lzw31_sn_dimmer_red_series:
+      application_version: '1.35'
+      averageRequestRTT: 84
+      averageResponseRTT: 190
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 74
+      lastResponseRTT: 149
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 6
+      node_id: 12
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 351
+      receivedDups: 10
+      receivedTS: '2020-01-24 06:58:30:731 '
+      receivedUnsolicited: 260
+      retries: 0
+      sentCnt: 114
+      sentFailed: 0
+      sentTS: '2020-01-24 06:58:29:584 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001:
+      application_version: '2.28'
+      averageRequestRTT: 87
+      averageResponseRTT: 220
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 108
+      lastResponseRTT: 266
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 5
+      - 9
+      - 11
+      - 12
+      node_id: 6
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 336
+      receivedDups: 20
+      receivedTS: '2020-01-24 06:58:01:722 '
+      receivedUnsolicited: 53
+      retries: 0
+      sentCnt: 309
+      sentFailed: 0
+      sentTS: '2020-01-24 06:57:57:700 '
+      state: ready
+- id: '1581188246643'
+  name: Living Lights Off
+  entities:
+    light.hue_color_lamp_1:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 1
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.hue_color_lamp_2:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 2
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.hue_color_lamp_3:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Hue color lamp 3
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
+    light.inovelli_lzw31_sn_dimmer_red_series_level:
+      friendly_name: Kitchen Light
+      node_id: 12
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594244071425'
+      value_index: 0
+      value_instance: 1
+    light.inovelli_unknown_type_0005_id_0001_level:
+      friendly_name: Dining Room
+      node_id: 6
+      state: 'off'
+      supported_features: 49
+      value_id: '72057594143408129'
+      value_index: 0
+      value_instance: 1
+    zwave.inovelli_lzw31_sn_dimmer_red_series:
+      application_version: '1.35'
+      averageRequestRTT: 126
+      averageResponseRTT: 300
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: Inovelli LZW31-SN Dimmer Red Series
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 73
+      lastResponseRTT: 152
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 6
+      node_id: 12
+      node_name: Inovelli LZW31-SN Dimmer Red Series
+      product_name: LZW31-SN Dimmer Red Series
+      query_stage: Complete
+      receivedCnt: 1159
+      receivedDups: 27
+      receivedTS: '2020-02-08 19:05:33:208 '
+      receivedUnsolicited: 935
+      retries: 0
+      sentCnt: 257
+      sentFailed: 0
+      sentTS: '2020-02-08 19:05:31:537 '
+      state: ready
+    zwave.inovelli_unknown_type_0005_id_0001:
+      application_version: '2.28'
+      averageRequestRTT: 81
+      averageResponseRTT: 245
+      capabilities:
+      - beaming
+      - zwave_plus
+      - listening
+      - routing
+      friendly_name: 'Inovelli Unknown: type=0005, id=0001'
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 80
+      lastResponseRTT: 252
+      manufacturer_name: Inovelli
+      max_baud_rate: 40000
+      neighbors:
+      - 4
+      - 5
+      - 9
+      - 11
+      - 12
+      node_id: 6
+      node_name: 'Inovelli Unknown: type=0005, id=0001'
+      product_name: 'Unknown: type=0005, id=0001'
+      query_stage: Complete
+      receivedCnt: 658
+      receivedDups: 49
+      receivedTS: '2020-02-08 19:05:59:315 '
+      receivedUnsolicited: 161
+      retries: 0
+      sentCnt: 617
+      sentFailed: 0
+      sentTS: '2020-02-08 19:05:57:228 '
+      state: ready
+- id: '1581188268378'
+  name: Bedroom lights off
+  entities:
+    light.hue_color_lamp_4:
+      effect_list:
+      - colorloop
+      - random
+      friendly_name: Marley Bedroom
+      max_mireds: 500
+      min_mireds: 153
+      state: 'off'
+      supported_features: 63
