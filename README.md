@@ -26,6 +26,10 @@ https://www.home-assistant.io/docs/installation/raspberry-pi/#updating
 2. source /srv/homeassistant/bin/activate
 3. python3 -m pip install --upgrade homeassistant
    * or pip3 install --upgrade homeassistant
+#### Check Status of service:
+journalctl -u home-assistant@homeassistant.service
+
+
 
 ### HASS-CLI
 https://github.com/home-assistant/home-assistant-cli
