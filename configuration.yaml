@@ -102,6 +102,26 @@ sensor:
       - type: last_boot
       - type: load_5m
 
+spotify:
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_client_secret
+
+switch:
+  - platform: flux
+    lights:
+      - light.hue_color_lamp_4
+    name: BedroomFlux
+#    start_time: '7:00'
+#    stop_time: '23:00'
+#    start_colortemp: 4000
+#    sunset_colortemp: 3000
+#    stop_colortemp: 1900
+#    brightness: 200
+#    disable_brightness_adjust: true
+#    mode: xy
+#    transition: 30
+#    interval: 60
+
 #service: remote.send_command
 #data:
 #  entity_id: remote.apple_tv
